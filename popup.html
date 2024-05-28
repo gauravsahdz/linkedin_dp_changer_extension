@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 250px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h4 {
+        margin-top: 0;
+        font-size: 16px;
+        color: #333;
+      }
+      input {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      button {
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: #0073b1;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005582;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Change Profile Picture</h4>
+    <input type="text" id="imageUrl" placeholder="Enter image URL" />
+    <button id="changeButton">Change</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

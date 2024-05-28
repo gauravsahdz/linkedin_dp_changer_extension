@@ -1,0 +1,7 @@
+/* Ensure replaced profile pictures are styled properly */
+img.feed-shared-actor__avatar-image,
+img.update-components-actor__avatar-image,
+img.profile-photo-edit__preview {
+  border-radius: 50%; /* Make sure the images remain circular */
+  object-fit: cover;
+}

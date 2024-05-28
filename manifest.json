@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Profile Picture Modifier",
+  "version": "1.0",
+  "description": "Modifies profile pictures on LinkedIn homepage posts.",
+  "permissions": ["activeTab", "webNavigation", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/feed/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "96": "icons/icon96.png",
+      "192": "icons/icon192.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png",
+    "192": "icons/icon192.png"
+  }
+}
